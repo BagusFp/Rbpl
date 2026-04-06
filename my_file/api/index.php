@@ -1,5 +1,4 @@
 <?php
-// Wajib panggil koneksi untuk mengambil data database
 require '../koneksi.php'; 
 $q_cek_mt = mysqli_query($koneksi, "SELECT nilai FROM pengaturan WHERE nama_pengaturan = 'maintenance_mode'");
 if ($q_cek_mt && mysqli_num_rows($q_cek_mt) > 0) {
