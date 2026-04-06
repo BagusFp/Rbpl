@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php'; 
+require __DIR__ . '/../koneksi.php';
 // Pastikan hanya manajer yang bisa masuk
 if (!isset($_SESSION['karyawan_role']) || $_SESSION['karyawan_role'] !== 'manajer') { header("Location: login.php"); exit; }
 

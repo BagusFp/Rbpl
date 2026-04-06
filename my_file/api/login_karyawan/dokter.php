@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php';
+require __DIR__ . '/../koneksi.php';
 if (!isset($_SESSION['karyawan_role']) || $_SESSION['karyawan_role'] !== 'dokter') { header("Location: login.php"); exit; }
 // Logika menyimpan diagnosa dan resep
 if (isset($_POST['simpan_diagnosa'])) {

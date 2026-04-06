@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php'; 
+require __DIR__ . '/../koneksi.php';
 if (!isset($_SESSION['karyawan_role']) || $_SESSION['karyawan_role'] !== 'administrasi') { header("Location: login.php"); exit; }
 date_default_timezone_set('Asia/Jakarta');
 
