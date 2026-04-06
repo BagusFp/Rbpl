@@ -1,5 +1,5 @@
 <?php
-require '../../koneksi.php'; 
+require '../koneksi.php'; 
 
 if (isset($_SESSION['karyawan_role'])) {
     $redirects = [

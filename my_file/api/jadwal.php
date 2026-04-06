@@ -1,5 +1,5 @@
 <?php 
-require '../koneksi.php';
+require 'koneksi.php';
 
 // Atur zona waktu ke Indonesia
 date_default_timezone_set('Asia/Jakarta');

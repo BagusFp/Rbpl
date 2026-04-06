@@ -1,5 +1,5 @@
 <?php
-require '../../koneksi.php'; 
+require '../koneksi.php'; 
 if (!isset($_SESSION['karyawan_role']) || $_SESSION['karyawan_role'] !== 'perawat') { header("Location: login.php"); exit; }
 // Pastikan path koneksinya benar
 

@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php';
+require 'koneksi.php';
 
 // Jika sudah login, langsung lempar ke index
 if (isset($_SESSION['login'])) {

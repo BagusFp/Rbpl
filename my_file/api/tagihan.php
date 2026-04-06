@@ -1,6 +1,5 @@
 <?php
-require '../koneksi.php';
-
+require 'koneksi.php';
 if (!isset($_SESSION['login'])) { header("Location: login.php"); exit; }
 $nik_pasien = $_SESSION['nik'];
 

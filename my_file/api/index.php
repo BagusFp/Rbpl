@@ -1,5 +1,5 @@
 <?php
-require '../koneksi.php'; 
+require 'koneksi.php'; 
 $q_cek_mt = mysqli_query($koneksi, "SELECT nilai FROM pengaturan WHERE nama_pengaturan = 'maintenance_mode'");
 if ($q_cek_mt && mysqli_num_rows($q_cek_mt) > 0) {
     $mt_data = mysqli_fetch_assoc($q_cek_mt);

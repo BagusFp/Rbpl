@@ -1,5 +1,5 @@
 <?php
-require '../../koneksi.php';
+require '../koneksi.php';
 // Proteksi Role
 if ($_SESSION['karyawan_role'] !== 'sdm') { header("Location: login.php"); exit; }
 
