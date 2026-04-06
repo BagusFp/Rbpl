@@ -12,9 +12,10 @@ $password = getenv('MYSQLPASSWORD');
 $db_name  = getenv('MYSQLDATABASE');
 $port     = getenv('MYSQLPORT');
 
-$connect = mysqli_connect($host, $user, $password, $db_name, $port);
+$koneksi = mysqli_connect($host, $user, $password, $db_name, $port);
 
-if (!$connect) {
+if (!$koneksi) {
     die("Koneksi  Gagal!");
+
 }
 ?>
