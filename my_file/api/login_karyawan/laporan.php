@@ -1,11 +1,12 @@
 <?php
+// 1. Panggil koneksi paling pertama (ini otomatis menjalankan session_start di folder /tmp)
 require __DIR__ . '/../koneksi.php';
-// Pastikan hanya manajer yang bisa masuk
-if (!isset($_SESSION['karyawan_role']) || $_SESSION['karyawan_role'] !== 'manajer') { header("Location: login.php"); exit; }
 
-// Pastikan path koneksi ini sesuai dengan foldermu
-
-
+// 2. Baru lakukan pengecekan session
+if (!isset($_SESSION['karyawan_role']) || $_SESSION['karyawan_role'] !== 'manajer') { 
+    header("Location: login.php"); 
+    exit; 
+}
 // --- LOGIKA DEVOPS (MAINTENANCE) ---
 if (isset($_POST['toggle_maintenance'])) {
     $status_baru = $_POST['status_maintenance'];
